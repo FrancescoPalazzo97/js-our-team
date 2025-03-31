@@ -18,6 +18,11 @@ a {
     font-style: normal;
     color: #6ebbb3;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #94fff4;
 }
 
 /* LAYOUT */
@@ -104,12 +109,33 @@ header p {
         width: 720px;
     }
 
+    #cards {
+        row-gap: 15px;
+    }
+
+    .card {
+        width: calc(100% / 2 - 15px);
+    }
+
+    #name {
+        font-size: 24px;
+    }
+
+    #role,
+    #email {
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
 
     .container {
         width: 540px;
+    }
+
+    .card {
+        width: 100%;
     }
     
 }

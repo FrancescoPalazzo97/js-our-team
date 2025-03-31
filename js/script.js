@@ -40,20 +40,23 @@ const teamMembers = [
 // Functions
 // Funzione per creare la stringa da aggiungere successivamente
 const createCard = (obj) => { 
+
+    const { name, role, email, img} = obj
+
     const card = `<div class="card d-flex">
                         <div class="card-image">
-                            <img src="../${obj.img}" alt="" class="w-100" id="image">
+                            <img src="../${img}" alt="" class="w-100" id="image">
                         </div>
                         <div class="card-content d-flex align-items-center">
                             <ul>
                                 <li>
-                                    <h3 id="name">${obj.name}</h3>
+                                    <h3 id="name">${name}</h3>
                                 </li>
                                 <li id="role">
-                                    ${obj.role}
+                                    ${role}
                                 </li>
                                 <li id="email">
-                                    <address><a href="#">${obj.email}</a></address>
+                                    <address><a href="#">${email}</a></address>
                                 </li>
                             </ul>
                         </div>
@@ -65,6 +68,7 @@ const createCard = (obj) => {
 
 }
 
+//Funzione che aggiunge la stringa generata dalla funzione createCard alla sezion cards del documento
 const printCard = (arr) => {
     let cards = ``;
 
