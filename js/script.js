@@ -82,4 +82,42 @@ const printCard = (arr) => {
     
 }
 
-printCard(teamMembers)
+const addMember = (e) => {
+    e.preventDefault();
+    
+    // Recupero i valori inseriti nella form
+    const name = document.getElementById(`name`).value;
+    const role = document.getElementById(`role`).value;
+    const email = document.getElementById(`email`).value; 
+    const img = document.getElementById(`img`).value;
+
+    // Controllo i valori inseriti
+    if (!name || !role || !email || !img) {
+        alert(`Completa tutti i campi`);
+        return
+    }
+
+
+    // Creo il nuovo object
+    const newMember = {
+        name,
+        role,
+        email,
+        img
+    };
+
+    console.log(newMember)
+
+    // Inserisco il nuovo object nell'array
+    teamMembers.push(newMember);
+
+    e.target.reset();
+
+    printCard(teamMembers);
+}
+
+printCard(teamMembers) // Richiamo la funzione
+
+document.querySelector(`form`).addEventListener(`submit`, addMember);
+ 
+ 

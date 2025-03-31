@@ -82,7 +82,7 @@ header p {
 /* CARDS */
 
 #cards {
-    justify-content: space-around;
+    column-gap: 30px;
     row-gap: 30px;
 }
 
