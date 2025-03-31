@@ -10,14 +10,102 @@ body {
     font-family: 'OutFit';
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    font-style: normal;
+    color: #6ebbb3;
+    text-decoration: none;
+}
+
+/* LAYOUT */
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* UTILITY */
+
+.text-center {
+    text-align: center;
+}
+
+/* FLEX */
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
 /* HEADER */
 
 h1 {
     color: #e53170;
     font-weight: 800;
     font-size: 60px;
+    margin: 30px 0;
 }
 
 header p {
     font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* MAIN */
+
+/* CARDS */
+
+.card {
+    width: calc(100% / 3);
+    background-color: black;
+    color: #fff;
+}
+
+.card-image {
+    width: 30%;
+}
+
+.card h3 {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.card-content li {
+    margin: 10px 20px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+
+    .container {
+        width: 720px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 540px;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+
+    .container {
+        width: 100%;
+    }
+    
 }
