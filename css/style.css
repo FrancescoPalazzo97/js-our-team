@@ -52,6 +52,10 @@ a:hover {
     flex-wrap: wrap;
 }
 
+.j-center {
+    justify-content: center;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -99,6 +103,61 @@ header p {
 
 .card-content li {
     margin: 10px 20px;
+}
+
+/* FORM */
+
+.form-container {
+    margin-top: 30px;
+}
+
+.form-container h2 {
+    margin: 20px 0;
+}
+
+form {
+    width: 25%;
+}
+
+form>.row {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+form>.row>* {
+    margin: 5px 0;
+}
+
+form label {
+    font-weight: 700;
+}
+
+input[type="text"] {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #e53170;
+    outline: none;
+    box-shadow: 0 0 5px #e5317085;
+}
+
+.submit-btn {
+    padding: 15px;
+    background-color: #e53170;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #ff4184;
 }
 
 /* RESPONSIVE */
