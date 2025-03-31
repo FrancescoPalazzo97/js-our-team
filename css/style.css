@@ -1,3 +1,5 @@
+/* GENERICS */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,4 +8,16 @@
 
 body {
     font-family: 'OutFit';
+}
+
+/* HEADER */
+
+h1 {
+    color: #e53170;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+header p {
+    font-size: 20px;
 }
