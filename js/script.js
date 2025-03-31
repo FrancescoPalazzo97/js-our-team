@@ -40,10 +40,9 @@ const teamMembers = [
 // Functions
 // Funzione per creare la stringa da aggiungere successivamente
 const createCard = (obj) => { 
-    const card = `<div id="cards" class="d-flex">
-                    <div class="card d-flex">
+    const card = `<div class="card d-flex">
                         <div class="card-image">
-                            <img src="./img/${obj.image}" alt="" class="w-100" id="image">
+                            <img src="../${obj.img}" alt="" class="w-100" id="image">
                         </div>
                         <div class="card-content d-flex align-items-center">
                             <ul>
@@ -58,13 +57,25 @@ const createCard = (obj) => {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                </div>`
+                    </div>`;
 
-    return card
+    console.log(card)
+
+    return card;
 
 }
 
-for (i = 0; i < teamMembers.length; i++){
-    createCard(teamMembers[i])
+const printCard = (arr) => {
+    let cards = ``;
+
+    for (i = 0; i < arr.length; i++){
+        cards += createCard(arr[i]);
+    }
+
+    console.log(cards)
+
+    document.getElementById(`cards`).innerHTML = cards;
+    
 }
+
+printCard(teamMembers)

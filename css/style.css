@@ -43,11 +43,19 @@ a {
     display: flex;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .align-items-center {
     align-items: center;
 }
 
 /* HEADER */
+
+header {
+    margin-bottom: 60px;
+}
 
 h1 {
     color: #e53170;
@@ -58,15 +66,19 @@ h1 {
 
 header p {
     font-size: 20px;
-    margin-bottom: 30px;
 }
 
 /* MAIN */
 
 /* CARDS */
 
+#cards {
+    justify-content: space-around;
+    row-gap: 30px;
+}
+
 .card {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 30px);
     background-color: black;
     color: #fff;
 }
