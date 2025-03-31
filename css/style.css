@@ -176,13 +176,16 @@ input[type="text"]:focus {
         width: calc(100% / 2 - 15px);
     }
 
-    #name {
+    .card li h3 {
         font-size: 24px;
     }
 
-    #role,
-    #email {
+    .card li {
         font-size: 14px;
+    }
+
+    form {
+        width: 50%;
     }
 
 }
@@ -196,6 +199,10 @@ input[type="text"]:focus {
     .card {
         width: 100%;
     }
+
+    form {
+        width: 100%;
+    }
     
 }
 
@@ -203,6 +210,11 @@ input[type="text"]:focus {
 
     .container {
         width: 100%;
+        padding: 0 10px;
+    }
+
+    form {
+        padding: 0 10px;
     }
     
 }

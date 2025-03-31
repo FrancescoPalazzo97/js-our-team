@@ -45,17 +45,17 @@ const createCard = (obj) => {
 
     const card = `<div class="card d-flex">
                         <div class="card-image">
-                            <img src="../${img}" alt="" class="w-100" id="image">
+                            <img src="../${img}" alt="" class="w-100">
                         </div>
                         <div class="card-content d-flex align-items-center">
                             <ul>
                                 <li>
-                                    <h3 id="name">${name}</h3>
+                                    <h3>${name}</h3>
                                 </li>
-                                <li id="role">
+                                <li>
                                     ${role}
                                 </li>
-                                <li id="email">
+                                <li>
                                     <address><a href="#">${email}</a></address>
                                 </li>
                             </ul>
